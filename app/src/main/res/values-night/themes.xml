@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MovieTv" parent="Theme.Material3.DayNight.NoActionBar">
+
+    </style>
+
+
+    <style name="Theme.Movie.Starting" parent="Theme.SplashScreen.IconBackground">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_screen</item>
+        <item name="postSplashScreenTheme">@style/Theme.MovieTv</item>
+
+    </style>
+    <style name="Theme.MovieTv" parent="Base.Theme.MovieTv">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorOnPrimary">@color/transparent</item>
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/blue_2</item>
+        <item name="colorAccent">@color/blue</item>
+    </style>
+</resources>
